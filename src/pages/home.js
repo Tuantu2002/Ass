@@ -22,7 +22,7 @@ const HomePage = {
     <footer>
         ${Footer.render()}
     </footer>
-    </div> `;
+        </div> `;
     },
 };
 export default HomePage;
