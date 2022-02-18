@@ -21,7 +21,9 @@
   },
   "dependencies": {
     "axios": "^0.25.0",
+    "json": "^11.0.0",
     "navigo": "^8.11.1",
+    "server": "^1.0.37",
     "toastr": "^2.1.4"
   }
 }

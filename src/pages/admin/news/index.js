@@ -1,5 +1,11 @@
+/* eslint-disable import/no-duplicates */
+/* eslint-disable prefer-destructuring */
+/* eslint-disable no-alert */
+import toastr from "toastr";
+import { remove } from "../../../api/posts";
 import { getAll } from "../../../api/posts";
 import NavAdmin from "../../../components/Nav";
+import { reRender } from "../../../utils";
 
 const AdminNews = {
     async render() {
@@ -65,6 +71,22 @@ const AdminNews = {
             </main>
         </div>
         `;
+    },
+    afterRender() {
+        const btns = document.querySelectorAll(".btn");
+        btns.forEach((btn) => {
+            const { id } = btn.dataset;
+            btn.addEventListener("click", () => {
+                const confirm = window.confirm(" ban co muon xoa khong");
+                if (confirm) {
+                    remove(id).then(() => {
+                        toastr.success("ban da xoa thanh cong");
+                    }).then(() => {
+                        reRender(AdminNews, "#app");
+                    });
+                }
+            });
+        });
     },
 };
 export default AdminNews;

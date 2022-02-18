@@ -24,5 +24,8 @@ const HomePage = {
     </footer>
         </div> `;
     },
+    afterRender() {
+        Header.afterRender();
+    },
 };
 export default HomePage;
