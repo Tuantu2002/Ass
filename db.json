@@ -146,18 +146,38 @@
       "id": "UFTT7KK"
     }
   ],
-  "products": [],
-  "users": [
+  "products": [
     {
-      "email": "tu@gmail.com",
-      "password": "$2a$10$PrECJ9BGRRuB9Q2uO48gV.AMefjVTqSIQQx0NC6qBbpr2nHlWFqSy",
-      "username": "Leo2002",
+      "name": "sản phẩm 1",
+      "price": "3400",
+      "quantity": "654",
+      "img": "http://res.cloudinary.com/dkpulhfe7/image/upload/v1645199969/ass/aqrjkcpgy1rktffxfcps.jpg",
+      "desc": "sdfgsdg",
       "id": 1
     },
     {
-      "email": "admin@gmail.com",
-      "password": "$2a$10$Kldf7ECTwtiMT/SWyuJ1suROEcwWjN87hMfvLmp7Cg376ypaSa/hG",
+      "name": "sản phẩm 2",
+      "price": "45000",
+      "quantity": "97877",
+      "img": "http://res.cloudinary.com/dkpulhfe7/image/upload/v1645205748/ass/efxyupv7wgfyikkhqa7n.jpg",
+      "desc": "ghfh",
       "id": 2
+    },
+    {
+      "name": "sản phẩm 3",
+      "price": "45000",
+      "quantity": "6546",
+      "img": "http://res.cloudinary.com/dkpulhfe7/image/upload/v1645212167/ass/x8mxk5nt5dvd20w9tf85.jpg",
+      "desc": "tfrewgerg",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$EGZwOVY7gYawTSRJU/LeUedifN8tzSCK49fXgOdU8hFs9wn1Pq5a6",
+      "user": "admin",
+      "id": 1
     }
   ]
 }

@@ -1,3 +1,83 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.imgheader   {
+    width: 80px;
+    /* height: auto; */
+}
+img.w-full {
+    padding-top: 10px;
+}
+/* detail products */
+.body-main{
+    margin-bottom: 100px;
+}
+.img-main img{
+    width: 200px;
+    margin-left: 150px;
+}
+.body-main{
+    margin-top: 100px;
+}
+.img-sub{
+    margin-top: 10px;
+}
+.img-sub-item{
+    width: 50px;
+}
+.title-intro h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+.title-intro p{
+    font-size: 13px;
+    color: #736C6C;
+    margin-bottom: 10px;
+}
+.price-product{
+    font-family: 'Dosis', sans-serif;
+    
+
+}
+.btn-detail{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+.btn-item{
+    width: 100%;
+    
+}
+.btn-now{
+    background-color: #ccc;
+    width: 100%;
+    padding: 5px 0px;
+    color: #736C6C;
+}
+.btn-now:hover{
+    background-color: blue;
+    color: #fff;
+    transition: 0.25s linear;
+}
+.btn-add-card{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+}
+.desc-product{
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.desc-product{
+    text-align: left;
+    font-size: 13px;
+}
+.list-desc{
+    padding: 10px 30px;
+}
+.list-desc li{
+    list-style: outside;
+    
+}

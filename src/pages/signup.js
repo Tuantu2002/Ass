@@ -14,6 +14,10 @@ const SignUp = {
           <form class="mt-8 space-y-6" action="#" method="POST" id = "formSignup">
             <input type="hidden" name="remember" value="true">
             <div class="rounded-md shadow-sm -space-y-px">
+            <div>
+            <label for="user" class="sr-only">user</label>
+            <input  id="user-address" name="user" type="text" autocomplete="user" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="user">
+          </div>
               <div>
                 <label for="email-address" class="sr-only">Email address</label>
                 <input  id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
@@ -55,6 +59,7 @@ const SignUp = {
         formSignup.addEventListener("submit", (e) => {
             e.preventDefault();
             signup({
+                user: document.querySelector("#user-address").value,
                 email: document.querySelector("#email-address").value,
                 password: document.querySelector("#password").value,
             });

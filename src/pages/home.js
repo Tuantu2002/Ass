@@ -7,7 +7,7 @@ const HomePage = {
     async   render() {
         return `
         <div class="container mx-auto p-5">
-        <header>
+        <header id ="header">
         ${Header.render()}
     </header>
     <main>
