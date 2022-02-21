@@ -51,7 +51,7 @@ const SignUp = {
         </div>
       </div>`;
     },
-    afterRender() {
+    afterRender(id) {
         const formSignin = document.querySelector("#formSignin");
         formSignin.addEventListener("submit", async (e) => {
             e.preventDefault();
@@ -74,7 +74,6 @@ const SignUp = {
                 }, 3000);
             } catch (error) {
                 toastr.error(error.response.data);
-                // console.log(error.response.data);
             }
         });
     },

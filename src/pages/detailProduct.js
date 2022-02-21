@@ -26,10 +26,9 @@ const DetailProduct = {
             </div>
             <div class="intro-product">
               <div class="title-intro">
-                <h2>${data.name}</h2>
-                <p>${data.color}</p>
-                <span class="price-product"> $ ${data.price} </span>
-                <p class = "text-black">${data.quantity} sản phẩm có sẵn</p>
+                <h2> Tên sản phẩm :${data.name}</h2></br></br>
+                <span class="price-product"> Giá : ${data.price} </span> </br></br>
+
                 <input
                           id="inpvalue"
                           type="number"
@@ -64,7 +63,6 @@ const DetailProduct = {
         ADDCart.addEventListener("click", async () => {
             const { data } = await get(id);
             addToCart({ ...data, quantity: 1 }, () => {
-                console.log("adđ nè");
             });
             // cart
             // click vào button
